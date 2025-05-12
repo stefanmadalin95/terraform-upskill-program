@@ -1,136 +1,130 @@
-# Exercise 2: Terraform Essentials
+# Terraform Essentials: Exercises for Module 2
 
-## Objectives
+## 🧪 Exercise 2.1: Working with Variables and Outputs
 
-- Work with variables and outputs
-- Use expressions and functions
-- Implement conditional logic
-- Utilize meta-arguments
+### Objective:
 
-## Tasks
+Create a Terraform configuration that uses input variables and outputs resource attributes.
 
-### 1. Variables and Outputs
+### Tasks:
 
-Create a new directory and set up the following files:
+1. Define a variable for the AWS region and instance type.
+2. Use these variables in an `aws_instance` resource.
+3. Output the instance ID and public IP address after the infrastructure is applied.
 
-**variables.tf**:
+### Example:
+
+* `variables.tf`
+
 ```hcl
-variable "filename" {
-  type        = string
-  description = "The name of the file to create"
-  default     = "example.txt"
+variable "region" {
+  default = "us-east-1"
 }
 
-variable "content" {
-  type        = string
-  description = "Content to write to the file"
-  default     = "This is an example file."
+variable "instance_type" {
+  default = "t2.micro"
+}
+```
+
+* `main.tf`
+
+```hcl
+provider "aws" {
+  region = var.region
 }
 
-variable "environment" {
-  type        = string
-  description = "Deployment environment"
-  default     = "dev"
-  validation {
-    condition     = contains(["dev", "test", "prod"], var.environment)
-    error_message = "Environment must be one of: dev, test, prod."
+resource "aws_instance" "example" {
+  ami           = "ami-0c55b159cbfafe1f0"
+  instance_type = var.instance_type
+}
+```
+
+* `outputs.tf`
+
+```hcl
+output "instance_id" {
+  value = aws_instance.example.id
+}
+
+output "public_ip" {
+  value = aws_instance.example.public_ip
+}
+```
+
+---
+
+## 🧪 Exercise 2.2: Creating Resources with Meta-Arguments
+
+### Objective:
+
+Use `count` and `for_each` to dynamically create multiple resources.
+
+### Tasks:
+
+1. Create 3 EC2 instances using the `count` meta-argument.
+2. Create 2 S3 buckets using `for_each` and a list of names.
+
+### Example:
+
+* EC2 Instances with `count`:
+
+```hcl
+resource "aws_instance" "multi" {
+  count         = 3
+  ami           = "ami-0c55b159cbfafe1f0"
+  instance_type = "t2.micro"
+  tags = {
+    Name = "Instance-${count.index}"
   }
 }
 ```
 
-**outputs.tf**:
+* S3 Buckets with `for_each`:
+
 ```hcl
-output "file_path" {
-  value       = local_file.example.filename
-  description = "Path to the created file"
+variable "bucket_names" {
+  default = ["app-logs", "app-images"]
 }
 
-output "file_content" {
-  value       = local_file.example.content
-  description = "Content of the created file"
-  sensitive   = false
+resource "aws_s3_bucket" "buckets" {
+  for_each = toset(var.bucket_names)
+
+  bucket = "my-${each.key}-bucket"
+  acl    = "private"
 }
 ```
 
-**main.tf**:
+---
+
+## 🧪 Exercise 2.3: Using Functions and Conditional Logic
+
+### Objective:
+
+Use Terraform expressions, functions, and conditional logic.
+
+### Tasks:
+
+1. Use the `upper()` function to transform a tag name to uppercase.
+2. Use conditional logic to assign different instance types based on the environment.
+
+### Example:
+
 ```hcl
-terraform {
-  required_providers {
-    local = {
-      source  = "hashicorp/local"
-      version = "~> 2.0"
-    }
+variable "env" {
+  default = "dev"
+}
+
+resource "aws_instance" "env_based" {
+  ami           = "ami-0c55b159cbfafe1f0"
+  instance_type = var.env == "prod" ? "t3.large" : "t3.micro"
+  tags = {
+    Environment = upper(var.env)
   }
 }
-
-locals {
-  env_prefix = {
-    dev  = "development"
-    test = "testing"
-    prod = "production"
-  }
-  file_content = "Environment: ${lookup(local.env_prefix, var.environment)}\nContent: ${var.content}"
-}
-
-resource "local_file" "example" {
-  content  = local.file_content
-  filename = "${path.module}/${var.environment}_${var.filename}"
-}
 ```
 
-2. Run `terraform init`, `terraform plan`, and `terraform apply`
-3. Try running with different variable values:
-   ```bash
-   terraform apply -var="environment=test" -var="content=Custom content"
-   ```
+---
 
-### 2. Conditional Logic
+✅ **Next Step:** Run `terraform init`, `plan`, and `apply` for each of the above configurations and observe the changes.
 
-Add the following to your main.tf:
-
-```hcl
-resource "local_file" "conditional_example" {
-  content  = var.environment == "prod" ? "PRODUCTION WARNING: Sensitive data" : "Non-production environment"
-  filename = "${path.module}/${var.environment}_warning.txt"
-}
-```
-
-### 3. Meta-Arguments
-
-Add the following to your main.tf:
-
-```hcl
-variable "file_count" {
-  type    = number
-  default = 3
-}
-
-variable "file_names" {
-  type    = map(string)
-  default = {
-    "file1" = "First file content"
-    "file2" = "Second file content"
-    "file3" = "Third file content"
-  }
-}
-
-# Using count
-resource "local_file" "count_example" {
-  count    = var.file_count
-  content  = "This is file ${count.index + 1}"
-  filename = "${path.module}/count_file_${count.index + 1}.txt"
-}
-
-# Using for_each
-resource "local_file" "foreach_example" {
-  for_each = var.file_names
-  content  = each.value
-  filename = "${path.module}/foreach_${each.key}.txt"
-}
-```
-
-Run `terraform apply` and observe the created files.
-
-## Submission
-
-Share your terraform configuration files and document your observations about how variables, outputs, conditional logic, and meta-arguments work in Terraform.
+📁 Don’t forget to clean up with `terraform destroy` after you complete each exercise.
