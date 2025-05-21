@@ -8,30 +8,11 @@
 
 ## 📚 Key Concepts:
 
-### 1. What is Infrastructure as Code (IaC)?
+1. What is Infrastructure as Code (IaC)?
 
 Infrastructure as Code (IaC) is a practice where infrastructure (servers, networks, storage, etc.) is provisioned and managed using code and automation instead of manual processes.
 
-### Core Concepts of IaC
-
-#### Declarative vs. Imperative
-
-- **Declarative**: Define the desired end state (what should be built), and the IaC tool determines how to achieve it
-- **Imperative**: Define step-by-step instructions to achieve the end state (how to build it)
-
-Terraform follows a primarily declarative approach, where you describe the desired infrastructure, and Terraform determines how to create, modify, or destroy resources to match that desired state.
-
-#### Idempotence
-
-A key property of IaC tools is idempotence - the ability to run the same code multiple times and achieve the same result regardless of the starting state. This makes infrastructure deployments reliable and predictable.
-
-#### Version Control
-
-IaC files can be stored in version control systems like Git, allowing for:
-- History tracking of infrastructure changes
-- Collaboration among team members
-- Rollback to previous working states
-- Code reviews for infrastructure changes
+📘 **Learn More:** [What is Infrastructure as Code (IaC)?](iac-overview.md)
 
 ### 2. What is Terraform?
 
@@ -59,6 +40,14 @@ terraform apply       # Creates or updates infrastructure
 terraform destroy     # Removes Terraform-managed infrastructure
 terraform version     # Checks installed Terraform version
 ```
+
+## 🔐 AWS Credentials Setup:
+
+To follow this course with real AWS infrastructure, you'll need to retrieve your AWS access keys.
+
+👉 Read how to retrieve them here: How to Retrieve AWS Access Keys
+
+📘 **Read how to retrieve them here:** [How to Retrieve AWS Access Keys](aws-access.md)
 
 ## 📌 Practical Example:
 
