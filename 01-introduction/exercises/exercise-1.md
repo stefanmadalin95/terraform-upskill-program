@@ -77,7 +77,7 @@ terraform plan
 terraform apply
 ```
 
-🔐 Make sure your AWS credentials are configured. [How to Retrieve AWS Keys](../aws-access-keys.md)
+🔐 Make sure your AWS credentials are configured. [How to Retrieve AWS Keys](../aws-access.md)
 
 4. Go to your AWS Console and verify that the S3 bucket has been created!
 
@@ -91,7 +91,7 @@ terraform apply
 * What worked/didn’t work
 * Screenshots or logs if possible
 
-✅ Optional: Try deleting the bucket using:
+✅ Try deleting the bucket using:
 
 ```bash
 terraform destroy
