@@ -19,69 +19,71 @@ By the end of this module, you will:
 
 Here’s the typical Terraform lifecycle:
 
-1️⃣ **Initialize**:  
+### 1️⃣ **Initialize**:  
 ```bash
 terraform init
-Downloads providers and sets up the project.
+```
+✅ Downloads providers and sets up the project.
 
-2️⃣ Plan:
+### 2️⃣ Plan:
 
-bash
-Copy
-Edit
+```bash
 terraform plan
-Previews the changes that Terraform will apply.
+```
+✅ Previews the changes that Terraform will apply.
 
-3️⃣ Apply:
+### 3️⃣ Apply:
 
-bash
-Copy
-Edit
+```bash
 terraform apply
-Applies the configuration and creates the resources.
+```
+✅ Applies the configuration and creates the resources.
 
-4️⃣ Destroy:
+### 4️⃣ Destroy:
 
-bash
-Copy
-Edit
+```bash
 terraform destroy
-Removes all resources managed by Terraform.
+```
+✅ Removes all resources managed by Terraform.
 
-🔧 Additional Commands
-✅ Show current state:
+### 🔧 Additional Commands
 
-bash
-Copy
-Edit
+#### ✅ Show current state:
+
+```bash
 terraform show
+```
+
 ✅ Validate configuration:
 
-bash
-Copy
-Edit
+```bash
 terraform validate
+```
+
 ✅ Format code:
 
-bash
-Copy
-Edit
+```bash
 terraform fmt
+```
+
 ✅ List resources:
 
-bash
-Copy
-Edit
+```bash
 terraform state list
-💡 Best Practices
+```
+
+## 💡 Best Practices
 ✅ Always run terraform plan before terraform apply.
 ✅ Use version control (like Git) to track changes.
 ✅ Document your workflows and share them with the team.
 ✅ Clean up resources you no longer need with terraform destroy.
 
-💡 Exercises
-✅ Exercise 1: Practice the Terraform Workflow
-✅ Exercise 2: Troubleshoot and Destroy
+## 💡 Exercises
+✅ [Exercise 1: Practice the Terraform Workflow](exercises/exercise-1.md)
+✅ [Exercise 2: Troubleshoot and Destroy](exercises/exercise-2.md)
 
-🔗 References
-Explore deeper explanations and command usage in references.md.
+## 🔗 References
+Explore deeper explanations and command usage in [references.md](references.md).
+
+## 🎉 Ready for the Next Step?
+✅ Once you’re set up, proceed to [Module 06: Terraform Modules](../module-06-terraform-modules/README.md).

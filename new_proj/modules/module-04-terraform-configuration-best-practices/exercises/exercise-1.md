@@ -23,5 +23,4 @@ Practice creating a clean and organized file structure.
 
 - How does this structure make the configuration easier to manage?  
 - How would you expand this if you had multiple resources?
-
-Write your thoughts here or discuss them with your team!
+- Write your thoughts here or discuss them with your team!

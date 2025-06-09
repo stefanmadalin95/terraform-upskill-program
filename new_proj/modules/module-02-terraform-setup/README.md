@@ -75,3 +75,15 @@ terraform version
 aws sts get-caller-identity
 ```
 ✅ If both commands work, your environment is ready for Terraform!
+
+## 💡 Exercises
+
+Ready to roll up your sleeves?  
+Complete these exercises to reinforce your learning:
+
+✅ [Exercise 1: Install and Verify Terraform](exercises/exercise-1.md)  
+
+Each exercise includes a short challenge and reflection questions—**discuss with a colleague to maximize learning!**
+
+## 🎉 Ready for the Next Step?
+✅ Once you’re set up, proceed to [Module 03: Terraform Core Concepts](../module-03-terraform-core-concepts/README.md).

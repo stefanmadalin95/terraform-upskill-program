@@ -24,8 +24,18 @@ Providers are plugins that let Terraform interact with cloud platforms and other
 **Example:**
 
 ```hcl
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
+    }
+  }
+}
+
+# Configure the AWS Provider
 provider "aws" {
-  region = "us-east-1"
+  region = "eu-west-1"
 }
 ```
 
@@ -87,7 +97,8 @@ output "bucket_name" {
 
 ### 6️⃣ State
 
-Terraform keeps track of everything it creates in a state file (terraform.tfstate).
+Terraform keeps track of everything it creates in a state file (```terraform.tfstate```).
+
 This ensures Terraform knows the current status of your infrastructure.
 
 
@@ -101,7 +112,7 @@ provider "aws" {
 }
 
 variable "region" {
-  default = "us-east-1"
+  default = "eu-west-1"
 }
 
 resource "aws_s3_bucket" "data_bucket" {
@@ -118,8 +129,11 @@ output "bucket_name" {
 
 Let’s put these concepts to practice:
 
-✅ Exercise 1: Define Your First Resource
-✅ Exercise 2: Use a Data Source
+✅ [Exercise 1: Define Your First Resource](exercises/exercise-1.md)
+✅ [Exercise 2: Use a Data Source](exercises/exercise-2.md)
 
 ## 🔗 References
-Check out additional resources for deeper understanding in references.md.
+Check out additional resources for deeper understanding in [references.md](references.md).
+
+## 🎉 Ready for the Next Step?
+✅ Once you’re set up, proceed to [Module 03: Terraform Configuration & Best Practices](../module-04-terraform-configuration-best-practices/README.md).

@@ -13,17 +13,16 @@ Learn how to keep your Terraform code clean and well-documented.
 
 ```bash
 terraform fmt
+```
+
 ✅ If you have tflint installed, run:
 
-bash
-Copy
-Edit
+```bash
 tflint
+```
 ✅ Fix any formatting issues or errors you find.
 
-Reflection
-Why is formatting and linting important for team collaboration?
-
-Share your favorite tip for keeping Terraform code clean!
-
-Capture your thoughts here or share them with your team!
+## Reflection
+- Why is formatting and linting important for team collaboration?
+- Share your favorite tip for keeping Terraform code clean!
+- Capture your thoughts here or share them with your team!

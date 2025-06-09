@@ -91,3 +91,6 @@ Complete these exercises to reinforce your learning:
 ✅ [Exercise 2: Explore the core components of Terraform](exercises/exercise-2.md)
 
 Each exercise includes a short challenge and reflection questions—**discuss with a colleague to maximize learning!**
+
+## 🎉 Ready for the Next Step?
+✅ Once you’re set up, proceed to [Module 02: Terraform Setup](../module-02-terraform-setup/README.md).

@@ -5,12 +5,12 @@ Here are some helpful resources to deepen your understanding:
 ---
 
 ### 🌱 Official Documentation
-- [Terraform Providers](https://developer.hashicorp.com/terraform/docs/language/providers)  
-- [Resources in Terraform](https://developer.hashicorp.com/terraform/tutorials/configuration-language/resource)  
-- [Data Sources](https://developer.hashicorp.com/terraform/tutorials/configuration-language/data-sources)  
-- [Variables](https://developer.hashicorp.com/terraform/tutorials/configuration-language/variables)  
-- [Outputs](https://developer.hashicorp.com/terraform/tutorials/configuration-language/outputs)  
-- [Terraform State](https://developer.hashicorp.com/terraform/docs/language/state)
+- [Terraform Providers](https://registry.terraform.io/browse/providers)  
+- [Resources in Terraform](https://developer.hashicorp.com/terraform/language/resources)  
+- [Data Sources](https://developer.hashicorp.com/terraform/language/data-sources)  
+- [Variables](https://developer.hashicorp.com/terraform/language/values/variables)  
+- [Outputs](https://developer.hashicorp.com/terraform/language/values/outputs)  
+- [Terraform State](https://developer.hashicorp.com/terraform/language/state)
 
 ---
 

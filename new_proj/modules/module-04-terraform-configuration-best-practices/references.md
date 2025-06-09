@@ -1,4 +1,3 @@
-```markdown
 # 📚 Module 04 References
 
 Here are some resources to reinforce your understanding:
@@ -6,19 +5,18 @@ Here are some resources to reinforce your understanding:
 ---
 
 ### 🌱 Official Resources
-- [Terraform Recommended Practices](https://developer.hashicorp.com/terraform/docs/language/files)  
+- [Terraform Recommended Practices](https://developer.hashicorp.com/terraform/cloud-docs/recommended-practices)  
 - [Terraform CLI Commands: fmt](https://developer.hashicorp.com/terraform/cli/commands/fmt)
 
 ---
 
 ### 💡 Articles
-- [Terraform Best Practices (Gruntwork)](https://blog.gruntwork.io/5-terraform-best-practices-2f2f0e4b6f6)  
-- [Terraform Tips for Cleaner Code (Medium)](https://medium.com/faun/terraform-best-practices-61d8d2d6c7ef)
+- [Terraform Best Practices (Gruntwork)](https://docs.gruntwork.io/guides/style/terraform-style-guide/)  
 
 ---
 
 ### 📺 Videos
-- [Terraform Best Practices (YouTube)](https://www.youtube.com/watch?v=-pjz0iEuNDw)
+- [Terraform Best Practices (YouTube)](https://www.youtube.com/watch?v=gxPykhPxRW0)
 
 ---
 
