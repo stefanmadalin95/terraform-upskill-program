@@ -2,24 +2,38 @@
 
 ## Objective
 
-Understand the basic idea of Infrastructure as Code (IaC) and how Terraform fits in.
+Get comfortable with the **concept of Infrastructure as Code (IaC)** and how Terraform helps make it real.  
+Let’s connect it to your daily work and start seeing the power of **automation**!
 
 ---
 
 ## Steps
 
 ✅ Read the section **"What is Infrastructure as Code (IaC)?"** in the module README.  
-✅ Write a short explanation in your own words:
-- What does **IaC** mean to you?  
-- How does it improve your day-to-day work as a data engineer?
+✅ Picture this scenario:  
+> **"Imagine a data engineering team that needs to deploy data pipelines in 3 regions every day.  
+Instead of setting up buckets, roles, and tables manually, they use Terraform to do it with a single command!"**
 
-✅ Think of 2-3 real-world scenarios in data engineering (like deploying an S3 bucket for raw data) where Terraform can save time.
+✅ Now, think of **1-2 repetitive tasks** you do often in your daily work (like setting up an S3 bucket or adjusting IAM policies).  
+✅ Write a **short explanation** (3-4 sentences):  
+- What does **IaC** mean to you?  
+- How would automating these tasks with Terraform make your work easier?
+
+---
+
+## Quick Quiz (for fun!)
+
+👉 **What’s the biggest headache when managing infrastructure manually?**  
+- [ ] Manual errors  
+- [ ] Inconsistent environments  
+- [ ] Hard to track changes  
+- [ ] All of the above!
+
+✅ Vote in your team chat or write your answer here!
 
 ---
 
 ## Reflection
 
-- Why do you think versioning infrastructure code in Git is helpful?  
-- How would you explain the difference between manual AWS console clicks and using Terraform to a teammate?
-
-Write your answers in a **Markdown file** or a comment in this exercise file.
+- What’s the one task you’re most excited to automate with Terraform?  
+- Share your thoughts here or discuss with a colleague!

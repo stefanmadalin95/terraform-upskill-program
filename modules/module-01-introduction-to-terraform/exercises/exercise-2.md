@@ -1,25 +1,32 @@
-# 📝 Exercise 2: Explore the Core Components of Terraform
+# 📝 Exercise 2: Real-World Reflections
 
 ## Objective
 
-Identify the core building blocks of Terraform and relate them to your data projects.
+See how IaC and Terraform can help you in a real data engineering scenario.
 
 ---
 
-## Steps
+## Scenario
 
-✅ Review the **"Terraform Core Components"** section in the module README.  
-✅ For each core component (Providers, Resources, Data Sources, Variables, Outputs, State), write down:
-- A short definition in your own words.  
-- A real-world example in a data engineering scenario (e.g., an S3 bucket as a resource, a data source for pulling VPC info).
+Imagine you need to:
 
-✅ Bonus: Sketch a small diagram (on paper or digital whiteboard) showing how these pieces might connect in a simple data lake deployment.
+✅ Create an S3 bucket for raw data  
+✅ Register it in a Glue Data Catalog  
+✅ Set up IAM roles for security  
+✅ Query data with Athena
+
+✅ **Reflection**:  
+- How would doing this manually (clicking in the AWS Console) feel?  
+- What benefits do you see if you could **automate this whole setup** with Terraform?
+
+✅ **Analogy to consider**:  
+- Terraform is like having a personal chef who always cooks your infrastructure “recipe” perfectly!
 
 ---
 
 ## Reflection
 
-- Which core component do you think is most critical to a data lake deployment, and why?  
-- Share one question you still have about any of these components.
+- What’s one real-world task in your current work that Terraform could automate?  
+- How would you explain this to a new teammate?
 
-Submit your answers in this file, or discuss them with a colleague!
+Capture your thoughts here or share them with your team!

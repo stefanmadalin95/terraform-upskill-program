@@ -6,9 +6,8 @@ Here are some helpful resources to complement your learning in Module 01.
 
 ## 🌱 Official Terraform Resources
 
-- [Terraform by HashiCorp: Official Docs](https://developer.hashicorp.com/terraform/docs)  
 - [What is Terraform?](https://www.hashicorp.com/terraform)  
-- [Terraform Providers Explained](https://developer.hashicorp.com/terraform/docs/providers)
+- [Terraform by HashiCorp: Official Docs](https://developer.hashicorp.com/terraform/docs)  
 
 ---
 
@@ -16,20 +15,20 @@ Here are some helpful resources to complement your learning in Module 01.
 
 - [What is Infrastructure as Code? (HashiCorp Blog)](https://www.hashicorp.com/resources/what-is-infrastructure-as-code)  
 - [AWS Whitepaper: Infrastructure as Code](https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/infrastructure-as-code.html)  
-- [IaC Overview (Medium)](https://medium.com/faun/what-is-infrastructure-as-code-bf915e08f69d)
+- [IaC Overview (Medium)](https://meriemterki.medium.com/understanding-infrastructure-as-code-iac-1be251758e01)
 
 ---
 
 ## 📺 Videos
 
-- [Introduction to Infrastructure as Code (YouTube)](https://www.youtube.com/watch?v=I73pJgZVap8)  
-- [Terraform Explained in 15 minutes (YouTube)](https://www.youtube.com/watch?v=SLB_c_ayRMo)
+- [Introduction to Infrastructure as Code (YouTube)](https://www.youtube.com/watch?v=zWw2wuiKd5o)  
+- [Terraform Course - Automate your AWS cloud infrastructure (YouTube)](https://www.youtube.com/watch?v=SLB_c_ayRMo)
 
 ---
 
 ## 📘 For Data Engineers
 
-- [Why Data Engineers Should Care About IaC (Article)](https://www.datacamp.com/blog/infrastructure-as-code-for-data-engineers)  
+- [Why Data Engineers Should Care About IaC (Article)](https://dev3lop.com/the-data-engineers-guide-to-infrastructure-as-code/)  
 - [Building a Data Lake on AWS (AWS Big Data Blog)](https://aws.amazon.com/big-data/datalakes-and-analytics/what-is-a-data-lake/)
 
 ---
