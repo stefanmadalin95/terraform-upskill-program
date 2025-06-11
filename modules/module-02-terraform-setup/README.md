@@ -1,89 +1,61 @@
 # ⚙️ Module 02: Terraform Setup
 
-Welcome to **Module 02**! In this module, we’ll get your environment ready to start working with Terraform. Let’s roll up our sleeves and set up everything you need for smooth Terraform development!
+Welcome to **Module 02**! Here, you’ll learn **why** setting up Terraform, the AWS CLI, and environment variables is crucial for working with infrastructure as code in real-world data projects.
 
 ---
 
-## 📖 Learning Objectives
+## 📖 Why This Setup Matters
 
-By the end of this module, you will:
+### 🟡 Why Install Terraform?
 
-✅ Install Terraform on your local machine  
-✅ Configure AWS CLI and credentials  
-✅ Verify your Terraform environment setup  
-✅ Understand environment variables and basic configuration
+Terraform is the **engine** behind your Infrastructure as Code.  
+✅ It lets you define cloud resources (like S3 buckets or VPCs) in code.  
+✅ It **automates** deploying and updating these resources—no more manual clicking!  
+✅ It ensures **consistency** and eliminates human error.
 
 ---
 
-## 🔧 Key Setup Steps
+### 🟡 Why Install the AWS CLI?
 
-### 1️⃣ Install Terraform
+The AWS CLI is your **command-line gateway** to AWS.  
+✅ It’s how Terraform **authenticates** with AWS to create resources.  
+✅ It’s also a great way to **test and validate** your AWS environment outside of Terraform.
 
-Terraform is a single binary file that you can download from the [official website](https://developer.hashicorp.com/terraform/downloads).
+---
 
-#### Steps:
-1. Download the binary for your operating system.  
-2. Unzip it and place it in a directory on your `PATH`.  
-3. Verify the installation:
+### 🟡 Why Configure Environment Variables?
 
-```bash
-terraform --version
-```
+Environment variables let you:
 
-### 2️⃣ Configure AWS CLI
-Terraform interacts with AWS using the AWS CLI.
-You’ll need the CLI installed and configured to let Terraform authenticate and manage your resources.
+✅ **Keep sensitive data safe** (like access keys) out of your code  
+✅ Quickly switch between different AWS accounts or regions  
+✅ Use best practices for security and collaboration
 
-#### Steps:
-Install the AWS CLI: Follow the installation guide for your OS.
+---
 
-#### Configure your AWS credentials:
+### 🟡 Putting It All Together
 
-```bash
-aws configure
-```
+By the end of this module, you’ll have:
 
-✅ Enter:
-- AWS Access Key ID
-- AWS Secret Access Key
-- Default region name
-- Output format (json, yaml, etc.)
+✅ Terraform installed and ready to deploy infrastructure  
+✅ The AWS CLI installed and configured to talk to your AWS account  
+✅ Environment variables set up to protect sensitive data  
+✅ Confidence that your environment is ready for the rest of the course!
 
-Verify your credentials:
+---
 
-```bash
-aws sts get-caller-identity
-```
-✅ If it shows your AWS account details, you’re all set!
+## 💡 Next Up: Exercises
 
-### 3️⃣ Set Environment Variables (Optional but Recommended)
-Terraform can also use environment variables to securely authenticate with AWS.
+👉 Head over to the **exercises** folder for hands-on tasks:  
+- [Exercise 1: Install Terraform](exercises/exercise-1.md)  
+- [Exercise 2: Install the AWS CLI](exercises/exercise-2.md)  
+- [Exercise 3: Configure AWS CLI and Credentials](exercises/exercise-3.md)  
+- [Exercise 4: Final Verification](exercises/exercise-4.md)
 
-Example:
-```bash
-export AWS_ACCESS_KEY_ID="your-access-key"
-export AWS_SECRET_ACCESS_KEY="your-secret-key"
-export AWS_DEFAULT_REGION="eu-west-1"
-```
-✅ Use these for scripting or CI/CD setups.
+---
 
-### 4️⃣ Verify Everything
-✅ Run:
+## 🎉 Ready for the Next Module?
 
-```bash
-terraform version
-aws sts get-caller-identity
-```
-✅ If both commands work, your environment is ready for Terraform!
+✅ Once your environment is set up, jump to [Module 03: Terraform Core Concepts](../module-03-terraform-core-concepts/README.md).
 
-## 💡 Exercises
-
-Ready to roll up your sleeves?  
-Complete these exercises to reinforce your learning:
-
-✅ [Exercise 1: Install and Verify Terraform](exercises/exercise-1.md)  
-
-Each exercise includes a short challenge and reflection questions—**discuss with a colleague to maximize learning!**
-
-## 🎉 Ready for the Next Step?
-✅ Once you’re set up, proceed to [Module 03: Terraform Core Concepts](../module-03-terraform-core-concepts/README.md).
+You’re laying the foundation for powerful data infrastructure work—let’s do it! 🚀✨

@@ -70,6 +70,7 @@ Here are some great resources to explore:
 - [AWS Whitepaper: Infrastructure as Code](https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/infrastructure-as-code.html)  
 - [What is Terraform?](https://www.hashicorp.com/terraform)
 
+Check out additional resources for deeper understanding in [references.md](references.md).
 ---
 
 ## 🎉 Ready for the Next Step?

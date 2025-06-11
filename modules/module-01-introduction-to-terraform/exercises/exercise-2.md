@@ -15,11 +15,11 @@ Imagine you need to:
 ✅ Set up IAM roles for security  
 ✅ Query data with Athena
 
-✅ **Reflection**:  
+**Reflection**:  
 - How would doing this manually (clicking in the AWS Console) feel?  
 - What benefits do you see if you could **automate this whole setup** with Terraform?
 
-✅ **Analogy to consider**:  
+**Analogy to consider**:  
 - Terraform is like having a personal chef who always cooks your infrastructure “recipe” perfectly!
 
 ---

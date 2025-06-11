@@ -1,16 +1,20 @@
-# 📝 Exercise 1: Install and Verify Terraform
+# 📝 Exercise 1: Install Terraform
 
 ## Objective
 
-Ensure that Terraform is correctly installed and ready to use.
+Install Terraform on your local machine.
 
 ---
 
 ## Steps
 
-✅ Download and install Terraform by following the instructions in the module README or directly from the [Terraform download page](https://developer.hashicorp.com/terraform/downloads).  
-✅ Once installed, run:
+✅ Go to the [Terraform download page](https://developer.hashicorp.com/terraform/downloads).  
+✅ Download the binary for your OS (macOS, Windows, or Linux).  
+✅ Unzip the file and move the Terraform binary to a directory in your PATH.  
+✅ Verify installation:
 
 ```bash
 terraform --version
 ```
+
+✅ Take a screenshot or note of the version output.
