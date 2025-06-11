@@ -1,21 +1,55 @@
-# 📝 Exercise 2: Use a Data Source
+# 📝 Exercise 2: Create Multiple Resources
 
 ## Objective
 
-Explore how data sources help you fetch data.
+Add multiple resources to see how Terraform can manage them together.
 
 ---
 
 ## Steps
 
-✅ Add a `data` block in your configuration to fetch the current AWS caller identity.  
-✅ Add an output to display the AWS account ID.
+✅ Create a file called `main.tf`.
 
----
+✅ In `main.tf`, add:
+
+```hcl
+resource "aws_s3_bucket" "data_bucket" {
+  bucket = "my-first-data-lake-bucket"
+}
+```
+
+✅ Now, let’s add another resource: an IAM Role for data processing jobs.
+
+```hcl
+resource "aws_iam_role" "data_role" {
+  name = "data-processing-role"
+  assume_role_policy = jsonencode({
+    Version = "2012-10-17",
+    Statement = [{
+      Action = "sts:AssumeRole",
+      Effect = "Allow",
+      Principal = {
+        Service = "ec2.amazonaws.com"
+      }
+    }]
+  })
+}
+```
+
+✅ Run:
+
+```bash
+terraform plan
+```
+
+✅ Apply the changes:
+
+```bash
+terraform apply
+```
+
+✅ Verify that both the bucket and the IAM Role were created in your AWS console.
 
 ## Reflection
-
-- Why is it helpful to include data sources in your configuration?  
-- Share an example of how this might be useful in a real-world data pipeline.
-
-Write your thoughts here or share them with your team!
+- How does Terraform handle creating multiple resources together?
+- How would you describe the advantage of defining these resources in code rather than clicking in the console?

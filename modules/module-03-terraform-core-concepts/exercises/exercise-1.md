@@ -1,23 +1,40 @@
-# 📝 Exercise 1: Define Your First Resource
+# 📝 Exercise 1: Configure the AWS Provider
 
 ## Objective
 
-Practice creating a simple resource.
+Set up the **AWS provider** to connect Terraform to your AWS account.
 
 ---
 
 ## Steps
 
-✅ Create a new file called `main.tf`.  
-✅ In this file, create an AWS S3 bucket resource.  
-✅ Use a variable for the region.  
-✅ Add an output to display the bucket name.
+✅ Create a file called `provider.tf`.  
+✅ Add the **provider block**:
 
----
+```hcl
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
+    }
+  }
+}
+
+# Configure the AWS Provider
+provider "aws" {
+  region = "eu-west-1"
+}
+```
+
+✅ Initialize Terraform:
+
+```bash
+terraform init
+```
+
+✅ Verify no errors.
 
 ## Reflection
-
-- What’s the difference between the resource block and the provider block?  
-- How does the variable make this configuration flexible?
-
-Write your answers in this file or discuss them with your team!
+- Why does Terraform need a provider block?
+- How would you change this for another cloud (like Azure)?
