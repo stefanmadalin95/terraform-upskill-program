@@ -63,18 +63,18 @@ terraform fmt
 
 ### 5️⃣ Variable and Output Organization
 
-✅ Keep variables in a separate variables.tf file.
-✅ Group outputs in outputs.tf for easier discovery.
+✅ Keep variables in a separate variables.tf file.  
+✅ Group outputs in outputs.tf for easier discovery.  
 
 ### 6️⃣ Keep Secrets Out of Code
 
-✅ Use environment variables or secret managers (like AWS Secrets Manager).
-✅ Avoid hardcoding sensitive data.
+✅ Use environment variables or secret managers (like AWS Secrets Manager).  
+✅ Avoid hardcoding sensitive data.  
 
 ## 💡 Exercises
 
-✅[Exercise 1: Organize Your Terraform Files](exercises/exercise-1.md)
-✅[Exercise 2: Clean Up and Format](exercises/exercise-2.md)
+✅[Exercise 1: Organize Your Terraform Files](exercises/exercise-1.md)  
+✅[Exercise 2: Clean Up and Format](exercises/exercise-2.md)  
 
 ## 🔗 References
 Explore deeper best practices and examples in [references.md](references.md).

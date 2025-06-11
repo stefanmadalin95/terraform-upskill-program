@@ -40,7 +40,7 @@ By the end of this module, you’ll have:
 ✅ Terraform installed and ready to deploy infrastructure  
 ✅ The AWS CLI installed and configured to talk to your AWS account  
 ✅ Environment variables set up to protect sensitive data  
-✅ Confidence that your environment is ready for the rest of the course!
+✅ Confidence that your environment is ready for the rest of the course!  
 
 ---
 

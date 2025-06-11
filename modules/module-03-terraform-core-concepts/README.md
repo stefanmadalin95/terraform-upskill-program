@@ -11,7 +11,7 @@ By the end of this module, you will:
 ✅ Understand the purpose of **providers**, **resources**, and **data sources**  
 ✅ Work with **variables** and **outputs** to create dynamic configurations  
 ✅ Learn how **Terraform state** tracks your infrastructure  
-✅ See real-world examples of these concepts in action
+✅ See real-world examples of these concepts in action  
 
 ---
 
@@ -146,12 +146,12 @@ Here’s how these pieces fit in a typical data engineering project:
 
 Let’s put these concepts to practice:
 
-✅ [Exercise 1: Configure the AWS Provider](exercises/exercise-1.md)
-✅ [Exercise 2: Create Multiple Resources](exercises/exercise-2.md)
-✅ [Exercise 3: Add Variables for Flexibility](exercises/exercise-3.md)
-✅ [Exercise 4: Use Data Sources](exercises/exercise-4.md)
-✅ [Exercise 5: Show Outputs](exercises/exercise-5.md)
-✅ [Exercise 6: Understand Terraform State](exercises/exercise-6.md)
+✅ [Exercise 1: Configure the AWS Provider](exercises/exercise-1.md)  
+✅ [Exercise 2: Create Multiple Resources](exercises/exercise-2.md)  
+✅ [Exercise 3: Add Variables for Flexibility](exercises/exercise-3.md)  
+✅ [Exercise 4: Use Data Sources](exercises/exercise-4.md)  
+✅ [Exercise 5: Show Outputs](exercises/exercise-5.md)  
+✅ [Exercise 6: Understand Terraform State](exercises/exercise-6.md)  
 
 ## 🔗 References
 Check out additional resources for deeper understanding in [references.md](references.md).

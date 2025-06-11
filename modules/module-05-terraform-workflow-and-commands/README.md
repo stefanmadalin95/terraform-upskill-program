@@ -73,14 +73,14 @@ terraform state list
 ```
 
 ## 💡 Best Practices
-✅ Always run terraform plan before terraform apply.
-✅ Use version control (like Git) to track changes.
-✅ Document your workflows and share them with the team.
-✅ Clean up resources you no longer need with terraform destroy.
+✅ Always run terraform plan before terraform apply.  
+✅ Use version control (like Git) to track changes.  
+✅ Document your workflows and share them with the team.  
+✅ Clean up resources you no longer need with terraform destroy.  
 
 ## 💡 Exercises
-✅ [Exercise 1: Practice the Terraform Workflow](exercises/exercise-1.md)
-✅ [Exercise 2: Troubleshoot and Destroy](exercises/exercise-2.md)
+✅ [Exercise 1: Practice the Terraform Workflow](exercises/exercise-1.md)  
+✅ [Exercise 2: Troubleshoot and Destroy](exercises/exercise-2.md)  
 
 ## 🔗 References
 Explore deeper explanations and command usage in [references.md](references.md).
