@@ -157,4 +157,4 @@ Let’s put these concepts to practice:
 Check out additional resources for deeper understanding in [references.md](references.md).
 
 ## 🎉 Ready for the Next Step?
-✅ Once you’re set up, proceed to [Module 04: Terraform Configuration & Best Practices](../module-04-terraform-configuration-best-practices/README.md).
+✅ Once you’re set up, proceed to [Module 04: Terraform Workflow and Commands](../module-04-terraform-workflow-and-commands/README.md).

@@ -1,6 +1,6 @@
-# 💾 Module 04: Terraform State Management
+# 💾 Module 05: Terraform State Management
 
-Welcome to **Module 04**! In this module, you’ll dive into how Terraform tracks the infrastructure it manages—and how to **secure and share** that information for team-based development.
+Welcome to **Module 05**! In this module, you’ll dive into how Terraform tracks the infrastructure it manages—and how to **secure and share** that information for team-based development.
 
 ---
 
@@ -84,12 +84,12 @@ terraform {
 🔄 Putting It All Together
 Let’s structure this like a real project:
 
-📁 /project-root
-├── main.tf – resources
-├── variables.tf – configuration
-├── outputs.tf – final values
-├── backend.tf – state config
-└── provider.tf – AWS provider
+📁 /project-root  
+├── main.tf – resources  
+├── variables.tf – configuration  
+├── outputs.tf – final values  
+├── backend.tf – state config  
+└── provider.tf – AWS provider  
 
 ## 💡 Exercises
 
@@ -102,4 +102,4 @@ Let’s structure this like a real project:
 Explore deeper best practices and examples in [references.md](references.md).
 
 ## 🎉 Ready for the Next Step?
-✅ Once you’re set up, proceed to [Module 05: Terraform Workflow and Commands](../module-05-terraform-workflow-and-commands/README.md).
+✅ Once you’re set up, proceed to [Module 06: Terraform Workflow and Commands](../module-06-terraform-modules/README.md).

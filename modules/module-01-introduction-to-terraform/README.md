@@ -64,13 +64,7 @@ Each exercise includes a short task and reflection questions—**no coding yet, 
 
 ## 🔗 References
 
-Here are some great resources to explore:
-
-- [Terraform by HashiCorp: Official Docs](https://developer.hashicorp.com/terraform/docs)  
-- [AWS Whitepaper: Infrastructure as Code](https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/infrastructure-as-code.html)  
-- [What is Terraform?](https://www.hashicorp.com/terraform)
-
-Check out additional resources for deeper understanding in [references.md](references.md).
+Check out additional resources for deeper understanding in [references](references.md).
 ---
 
 ## 🎉 Ready for the Next Step?

@@ -1,4 +1,4 @@
-# 📚 Module 05 References
+# 📚 Module 04 References
 
 Here are some helpful resources to master Terraform workflows:
 
@@ -12,13 +12,7 @@ Here are some helpful resources to master Terraform workflows:
 ---
 
 ### 💡 Articles
-- [A Guide to Terraform CLI Commands (Gruntwork)](https://blog.gruntwork.io/terraform-tips-and-tricks)  
-- [Terraform Commands Cheat Sheet (Medium)](https://medium.com/faun/terraform-cheat-sheet-8b5a7e92d54c)
-
----
-
-### 📺 Videos
-- [Terraform Workflow Explained (YouTube)](https://www.youtube.com/watch?v=VpuP8x6-xMI)
+- [Terraform Commands Cheat Sheet (Medium)](https://medium.com/@pravinspatil2045/terraform-commands-cheat-sheet-80efcb8d617f)
 
 ---
 
