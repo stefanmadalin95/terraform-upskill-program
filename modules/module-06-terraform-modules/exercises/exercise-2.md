@@ -1,35 +1,29 @@
-# 📝 Exercise 2: Use a Public Module
+# 🧱 Exercise 2: Create a Reusable IAM Role Module
 
 ## Objective
 
-Learn to use a module from the Terraform Registry.
+Build a module to manage IAM roles.
 
 ---
 
 ## Steps
 
-✅ Visit the [Terraform Registry](https://registry.terraform.io/).  
-✅ Choose a module (like the `terraform-aws-modules/vpc/aws`).  
-✅ In your `main.tf`, add:
+✅ Inside `modules/iam_role/`, define:
+
+- `main.tf` – IAM role resource with `assume_role_policy`  
+- `variables.tf` – accepts `role_name`  
+- `outputs.tf` – returns role name and ARN
+
+✅ Call it in root config like this:
 
 ```hcl
-module "vpc" {
-  source  = "terraform-aws-modules/vpc/aws"
-  version = "5.0.0"
-  name    = "my-team-vpc"
-  cidr    = "10.0.0.0/16"
+module "data_role" {
+  source    = "./modules/iam_role"
+  role_name = "data-ingestion-role"
 }
 ```
 
-✅ Initialize and apply:
-
-```bash
-terraform init
-terraform plan
-terraform apply
-```
+✅ Apply and validate.
 
 ## Reflection
-- What’s the advantage of using a pre-built module from the Registry?
-- How would you decide between using a public module or writing your own?
-- Capture your thoughts here or share with the team!
+- How does this module help you enforce standards across teams?

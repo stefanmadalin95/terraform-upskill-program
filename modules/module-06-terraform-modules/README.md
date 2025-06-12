@@ -1,83 +1,89 @@
-# 📦 Module 06: Terraform Modules
+# 🧱 Module 06: Working with Terraform Modules
 
-Welcome to **Module 06**! In this module, we’ll explore how to create and use **Terraform modules** to make your configurations more **reusable, organized, and collaborative**.
+Welcome to Module 06! Terraform modules are one of the most powerful features for writing **clean**, **reusable**, and **scalable** infrastructure code.
+
+You’ve already seen Terraform in action using `.tf` files. Now, it’s time to learn how to **package** that knowledge into modules—just like you write functions in code to avoid duplication.
 
 ---
 
 ## 📖 Learning Objectives
 
-By the end of this module, you will:
-
-✅ Understand what **Terraform modules** are and why they matter  
-✅ Learn how to create a **local module**  
-✅ Explore how to use **public modules** from the Terraform Registry  
-✅ Practice building and using modules for real-world infrastructure
-
----
-
-## 🧩 Key Concepts
-
-### 1️⃣ What are Modules?
-
-Modules are containers for multiple Terraform resources that work together.  
-✅ They help you **organize** and **reuse** your code.
+✅ Understand the purpose of modules in Terraform  
+✅ Learn how to structure and call both **local** and **remote** modules  
+✅ Build your own module to manage S3 buckets and IAM roles  
+✅ Practice splitting reusable logic into self-contained building blocks  
+✅ Prepare for organizing infrastructure in your **data lake project**
 
 ---
 
-### 2️⃣ Why Use Modules?
+## 🔍 What Is a Module?
 
-✅ DRY (Don’t Repeat Yourself): Reuse the same configurations.  
-✅ Scalability: Easily scale your infrastructure by reusing modules.  
-✅ Collaboration: Modules are easier to share and maintain.
+A **module** is simply a collection of `.tf` files in a folder. You can think of it as:
+
+📦 **A reusable Terraform package**
+
+✅ Modules allow you to:
+- Group related resources (e.g., all resources for a data ingestion job)
+- Pass in variables to customize behavior
+- Reduce duplication across environments (dev, test, prod)
 
 ---
 
-### 3️⃣ Creating a Local Module
+### 🧠 Analogy
 
-A simple **module structure**:
+Think of a module like a **reusable Lego block**:  
+You design it once, and then use it over and over again in different builds.
 
-- modules/
-- my-s3-bucket/
-- main.tf
-- variables.tf
-- outputs.tf
+---
 
-In your **root configuration**:
+## 🧩 Module Structure
+
+Every module can contain:
+📁 /my-module/  
+├── main.tf # resource definitions  
+├── variables.tf # input parameters  
+├── outputs.tf # what the module returns  
+
+
+And you call it like this:
 
 ```hcl
-module "s3_bucket" {
-  source = "./modules/my-s3-bucket"
-  bucket_name = "my-team-logs"
+module "my_bucket" {
+  source = "./modules/s3_bucket"
+
+  bucket_name = "modular-bucket-001"
+  region      = "us-east-1"
 }
 ```
 
-### 4️⃣ Using Modules from the Terraform Registry
-You can also use pre-built modules:
+## 🧠 Best Practices  
+✅ Keep modules focused – do one thing well (e.g., an S3 bucket, an IAM role)  
+✅ Use meaningful variable names and clear outputs  
+✅ Store reusable modules in a central modules/ folder  
+✅ Avoid tight coupling between unrelated modules  
 
-```hcl
-module "vpc" {
-  source  = "terraform-aws-modules/vpc/aws"
-  version = "5.0.0"
-  name    = "my-vpc"
-  cidr    = "10.0.0.0/16"
-}
-```
+## 🛠️ What You'll Build
 
-### 5️⃣ Best Practices
+In this module, you'll:
 
-✅ Keep your modules small and focused.
-✅ Use input variables to make them flexible.
-✅ Document how to use them in a README.md file.
-✅ Use version pinning when using modules from the Registry.
+- Create a module for S3 bucket provisioning
+- Create a module for IAM role definition
+- Use a root configuration to call both modules
+- Pass in variables and access outputs
+- Reflect on how this structure helps scale your infrastructure
 
 ## 💡 Exercises
-✅ [Exercise 1: Create a Local Module](exercises/exercise-1.md)
-✅ [Exercise 2: Use a Public Module](exercises/exercise-2.md)
+
+👉 Go to the exercises folder to start building:
+
+✅ [Exercise 1: Create a Reusable S3 Bucket Module](exercises/exercise-1.md)  
+✅ [Exercise 2: Create a Reusable IAM Role Module](exercises/exercise-2.md)  
+✅ [Exercise 3: Compose Modules in a Root Project](exercises/exercise-3.md)  
+✅ [Exercise 4: Use Module Outputs](exercises/exercise-4.md)  
+✅ [Exercise 5: Reflect on Modular Infrastructure](exercises/exercise-5.md)    
 
 ## 🔗 References
-Check out additional resources and examples in [references.md](references.md).
+Explore deeper best practices and examples in [references](references.md).
 
 ## 🎉 Ready for the Next Step?
-✅ Once you’re comfortable with modules, proceed to [Module 07: AWS Data Lake Architecture and Components](../module-07-aws-data-lake-architecture-and-components/README.md).
-
-Keep your modules clean and your infrastructure consistent! 🚀✨
+✅ Once you’re set up, proceed to [Module 07: Terraform Workflow and Commands](../module-07-aws-data-lake-architecture-and-components/README.md).
