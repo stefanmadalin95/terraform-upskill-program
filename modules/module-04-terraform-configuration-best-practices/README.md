@@ -1,7 +1,6 @@
-# 🏗️ Module 04: Terraform Configuration Best Practices
+# 💾 Module 04: Terraform State Management
 
-Welcome to **Module 04**! In this module, we’ll focus on writing **clean, maintainable, and scalable Terraform code**. 
-By following best practices, you’ll ensure your infrastructure as code is robust and easier to manage.
+Welcome to **Module 04**! In this module, you’ll dive into how Terraform tracks the infrastructure it manages—and how to **secure and share** that information for team-based development.
 
 ---
 
@@ -9,72 +8,95 @@ By following best practices, you’ll ensure your infrastructure as code is robu
 
 By the end of this module, you will:
 
-✅ Understand recommended file structure and naming conventions  
-✅ Learn the importance of formatting, comments, and documentation  
-✅ Explore techniques for reusability and maintainability  
-✅ Practice applying these best practices in small Terraform projects
+✅ Understand what the **Terraform state file** is and why it’s critical  
+✅ Learn the risks of local state in team environments  
+✅ Configure **remote state storage in S3**  
+✅ Set up **state locking with DynamoDB** (optional but recommended)  
+✅ Practice using a **project-like structure** with multiple `.tf` files and modules
 
 ---
 
-## 🔧 Key Best Practices
+## 🧠 What Is Terraform State?
 
-### 1️⃣ File and Directory Structure
+When you deploy infrastructure with Terraform, it keeps a **record of what it deployed** in a file called `terraform.tfstate`.
 
-Organize your files for clarity and scalability:
-- main.tf
-- variables.tf
-- outputs.tf
-- terraform.tfvars
+✅ This file tracks:
+- Resource names and IDs
+- Dependencies
+- Metadata
 
-✅ Use subfolders for modules or environments as your project grows.
-
----
-
-### 2️⃣ Naming Conventions
-
-✅ Use descriptive, consistent names for resources, variables, and outputs.  
-✅ Avoid using generic names like `resource "aws_s3_bucket" "bucket1"`. Instead, use `resource "aws_s3_bucket" "logs_bucket"`.
+✅ Without the state, Terraform wouldn't know what already exists.
 
 ---
 
-### 3️⃣ Comments and Documentation
+## 🚨 Why Managing State Matters
 
-✅ Use comments to explain why something is done a certain way:
+🟡 In solo projects, a local `terraform.tfstate` file is fine.  
+🔴 In **team settings**, storing state locally is dangerous:
+- It can get **out of sync**
+- It can be **accidentally overwritten**
+- It doesn't support collaboration
+
+✅ The solution: store state **remotely in S3** with **locking via DynamoDB**
+
+---
+
+## ☁️ Remote State in S3
+
+### 1️⃣ Set up an S3 bucket to hold your state
 
 ```hcl
-# Create an S3 bucket for storing logs
-resource "aws_s3_bucket" "logs_bucket" {
-  bucket = "my-logs-bucket"
+resource "aws_s3_bucket" "tf_state" {
+  bucket = "terraform-state-yourname"
   acl    = "private"
 }
 ```
 
-✅ Keep README files updated for your modules!
+### 2️⃣ Optional: Create a DynamoDB table for locking
 
-### 4️⃣ Formatting and Linting
+```hcl
+resource "aws_dynamodb_table" "tf_locks" {
+  name           = "terraform-state-locks"
+  billing_mode   = "PAY_PER_REQUEST"
+  hash_key       = "LockID"
 
-✅ Use terraform fmt to format your code consistently:
-
-```bash
-terraform fmt
+  attribute {
+    name = "LockID"
+    type = "S"
+  }
+}
 ```
 
-✅ Use linters like tflint for catching errors early.
+### 3️⃣ Configure your backend in a new backend.tf
 
-### 5️⃣ Variable and Output Organization
+```hcl
+terraform {
+  backend "s3" {
+    bucket         = "terraform-state-yourname"
+    key            = "dev/terraform.tfstate"
+    region         = "us-east-1"
+    dynamodb_table = "terraform-state-locks"
+    encrypt        = true
+  }
+}
+```
 
-✅ Keep variables in a separate variables.tf file.  
-✅ Group outputs in outputs.tf for easier discovery.  
+🔄 Putting It All Together
+Let’s structure this like a real project:
 
-### 6️⃣ Keep Secrets Out of Code
-
-✅ Use environment variables or secret managers (like AWS Secrets Manager).  
-✅ Avoid hardcoding sensitive data.  
+📁 /project-root
+├── main.tf – resources
+├── variables.tf – configuration
+├── outputs.tf – final values
+├── backend.tf – state config
+└── provider.tf – AWS provider
 
 ## 💡 Exercises
 
-✅[Exercise 1: Organize Your Terraform Files](exercises/exercise-1.md)  
-✅[Exercise 2: Clean Up and Format](exercises/exercise-2.md)  
+✅[Exercise 1: Explore Local Terraform State](exercises/exercise-1.md)  
+✅[Exercise 2: Set Up Remote Backend in S3](exercises/exercise-2.md)  
+✅[Exercise 3: Add DynamoDB Locking (Optional)](exercises/exercise-3.md)  
+✅[Exercise 4: Simulate a Mini Project Setup](exercises/exercise-4.md)  
 
 ## 🔗 References
 Explore deeper best practices and examples in [references.md](references.md).

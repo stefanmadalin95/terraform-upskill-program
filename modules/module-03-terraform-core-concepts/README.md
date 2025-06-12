@@ -134,12 +134,12 @@ output "bucket_name" {
 ## 🌟 Putting It All Together
 Here’s how these pieces fit in a typical data engineering project:
 
-1️⃣ Use the provider to connect to AWS
-2️⃣ Create resources like S3 buckets
-3️⃣ Use variables to make them flexible (like region or bucket name)
-4️⃣ Use data sources to read existing data (like AWS account ID)
-5️⃣ Show final outputs for your team to see
-6️⃣ Terraform tracks everything in state file
+1️⃣ Use the provider to connect to AWS  
+2️⃣ Create resources like S3 buckets  
+3️⃣ Use variables to make them flexible (like region or bucket name)  
+4️⃣ Use data sources to read existing data (like AWS account ID)  
+5️⃣ Show final outputs for your team to see  
+6️⃣ Terraform tracks everything in state file  
 
 
 ## 💡 Exercises

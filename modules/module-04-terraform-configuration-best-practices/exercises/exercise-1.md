@@ -1,26 +1,24 @@
-# 📝 Exercise 1: Organize Your Terraform Files
+# 📝 Exercise 1: Explore Local Terraform State
 
 ## Objective
 
-Practice creating a clean and organized file structure.
+Understand how Terraform tracks resources locally.
 
 ---
 
 ## Steps
 
-✅ Create a new directory for a small Terraform project (e.g., creating an S3 bucket).  
-✅ In this directory, create the following files:
+✅ Apply a basic config from previous modules  
+✅ Open `terraform.tfstate` (read-only!)  
+✅ Run:
 
-- `main.tf` (with your provider and resource)  
-- `variables.tf` (define at least one variable for region)  
-- `outputs.tf` (output the bucket name)
+```bash
+terraform state list
+terraform state show aws_s3_bucket.data_bucket
+```
 
-✅ Initialize Terraform and verify your configuration with `terraform plan`.
-
----
+✅ Observe the structure and data in the state
 
 ## Reflection
-
-- How does this structure make the configuration easier to manage?  
-- How would you expand this if you had multiple resources?
-- Write your thoughts here or discuss them with your team!
+- What surprised you about what Terraform stores in the state?
+- Why should this file be treated like sensitive configuration?
