@@ -1,81 +1,63 @@
-# 💧 Module 07: AWS Data Lake Architecture and Components
+# 🏗️ Module 07: Intro to Data Lake Components (Terraform + AWS)
 
-Welcome to **Module 07**! In this module, we’ll explore the **key building blocks** of an AWS data lake and see how Terraform helps deploy them.
-
----
-
-## 📖 Learning Objectives
-
-By the end of this module, you will:
-
-✅ Understand the purpose of **Amazon S3**, **AWS Glue**, **Amazon VPC**, **IAM**, and **Athena** in a data lake  
-✅ Learn how these services work together to build a scalable data lake  
-✅ Practice deploying and configuring these resources using Terraform
+In this module, you’ll bring your Terraform skills into the **data world**.  
+We’ll break down each component of a modern **data lake architecture** and show how it translates into AWS services and Terraform resources.
 
 ---
 
-## 🏗️ Key Components
+## 🧭 Learning Objectives
 
-### 1️⃣ Amazon S3
-
-✅ **Purpose:** Main storage layer for raw, processed, and curated data  
-✅ **Analogy:** Like a giant, organized digital library
-
----
-
-### 2️⃣ AWS Glue
-
-✅ **Purpose:** Catalogs your data and runs basic ETL jobs  
-✅ **Analogy:** The index and librarian of your data lake
+✅ Understand the **purpose** of each layer in a data lake  
+✅ Learn how AWS services support data lake design  
+✅ Explore which **Terraform modules** to use for each component  
+✅ Prepare your final project infrastructure blueprint  
+✅ Practice wiring together real infrastructure pieces before the final build
 
 ---
 
-### 3️⃣ Amazon VPC
+## 🧊 What Is a Data Lake?
 
-✅ **Purpose:** Secure network environment for your data lake  
-✅ **Analogy:** The private campus where your data lake resides
+A **data lake** is a centralized repository that allows you to store structured and unstructured data at any scale.
 
----
+It typically includes:
 
-### 4️⃣ IAM (Identity and Access Management)
-
-✅ **Purpose:** Controls who can access what in AWS  
-✅ **Analogy:** The keys and roles for your data lake’s doors
-
----
-
-### 5️⃣ Athena
-
-✅ **Purpose:** Enables SQL queries directly on data in S3  
-✅ **Analogy:** A fast search engine for your data lake
+| Layer             | Purpose                                   | AWS Example           |
+|-------------------|-------------------------------------------|-----------------------|
+| Storage Layer     | Store raw and curated datasets            | AWS S3                |
+| Metadata Layer    | Describe and manage data structure        | AWS Glue Data Catalog |
+| Access Layer      | Enable data exploration and reporting     | IAM Roles, Athena     |
+| Processing Layer  | Execute and manage data processing jobs   | AWS Glue Jobs         |
 
 ---
 
-## 🚀 Real-World Architecture
+## 🧰 Services You’ll Work With
 
-A typical **AWS Data Lake** includes:
-
-✅ S3 buckets for raw, processed, and curated data  
-✅ Glue Data Catalog for table definitions  
-✅ Secure networking with VPCs and subnets  
-✅ IAM roles for access control  
-✅ Athena for interactive analytics
+| Terraform Module      | AWS Service           | Purpose                              |
+|-----------------------|-----------------------|--------------------------------------|
+| `aws_s3_bucket`       | Amazon S3             | Store raw, curated, processed data   |
+| `aws_glue_catalog_*`  | AWS Glue Data Catalog | Allow jobs/users to interact with data |
+| `aws_athena_database` | Amazon Athena         | Organize metadata for datasets       |
+| `aws_iam_role/policy` | IAM                   | Query the data lake                  |
+| `aws_glue_job`        | AWS Glue              | Trace cost and ownership             |
 
 ---
 
-## 💡 Exercises
+## 🧪 Hands-on Exercises
 
-✅ [Exercise 1: Create an S3 Bucket](exercises/exercise-1.md)  
-✅ [Exercise 2: Set Up the Glue Data Catalog](exercises/exercise-2.md)  
-✅ [Exercise 3: Create a VPC](exercises/exercise-3.md)  
-✅ [Exercise 4: Manage IAM Roles and Policies](exercises/exercise-4.md)  
-✅ [Exercise 5: Query Data with Athena](exercises/exercise-5.md)
+👉 See the [exercises folder](./exercises)
+
+✅ [Exercise 1: Create Unique S3 Bucket and Directory](exercises/exercise-1.md)  
+✅ [Exercise 2: Create Glue Catalog Database and Table](exercises/exercise-2.md)  
+✅ [Exercise 3: Connect Athena to Glue Catalog](exercises/exercise-3.md)  
+✅ [Exercise 4: Create IAM Role for Catalog Access](exercises/exercise-4.md)  
+✅ [Exercise 5: Create Glue Job to Query Catalog Data](exercises/exercise-5.md)
+
 
 ---
 
 ## 🔗 References
 
-Explore deeper AWS Data Lake best practices in [references.md](references.md).
+Explore deeper AWS Data Lake best practices in [references](references.md).
 
 ---
 

@@ -13,13 +13,12 @@ Here are some helpful resources to dive deeper into AWS Data Lake concepts:
 ---
 
 ### 💡 Articles
-- [Building a Data Lake on AWS (AWS Blog)](https://aws.amazon.com/blogs/big-data/building-data-lakes-on-aws/)  
-- [Data Lake Security Best Practices](https://aws.amazon.com/blogs/security/data-lake-security-best-practices/)
+- [Building a Data Lake on AWS (AWS Blog)](https://aws.amazon.com/blogs/big-data/tag/data-lake/)  
 
 ---
 
 ### 📺 Videos
-- [AWS Data Lake Explained (YouTube)](https://www.youtube.com/watch?v=YavG43S2gFs)
+- [Data Lake Explained (YouTube)](https://www.youtube.com/watch?v=LxcH6z8TFpI)
 
 ---
 
