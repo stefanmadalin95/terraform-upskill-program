@@ -8,7 +8,28 @@ You’ll need the CLI installed and configured to let Terraform authenticate and
 ---
 
 ## Steps
-Install the AWS CLI: Follow the installation guide for your OS.
+
+### 🔐 Generate Access Keys in AWS Console
+
+If you're using an IAM user to authenticate locally, you must generate access keys from the AWS Console. These keys allow Terraform and the AWS CLI to authenticate requests.
+
+#### ✅ Step-by-Step Instructions:
+
+- Log in to the AWS Management Console using your IAM user account.
+- Navigate to Services → IAM (Identity and Access Management).
+- In the left panel, click on Users.
+- Click on your IAM username.
+- Go to the Security credentials tab.
+- Scroll down to the Access keys section.
+- Click Create access key.
+- When prompted, choose the use case:
+- Select "Command Line Interface (CLI)"
+- Click Next
+- You’ll see the Access key ID and Secret access key.
+
+⚠️ Make sure to copy the secret access key right away. You won’t be able to retrieve it again later.
+
+Save them securely in a password manager or credentials file.
 
 ### Configure your AWS credentials:
 

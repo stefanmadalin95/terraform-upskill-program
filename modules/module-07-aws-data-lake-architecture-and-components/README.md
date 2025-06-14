@@ -63,6 +63,6 @@ Explore deeper AWS Data Lake best practices in [references](references.md).
 
 ## 🎉 Ready for the Final Integration?
 
-✅ Once you’ve practiced with these components, proceed to [Module 08: Putting It All Together](../module-08-putting-it-all-together/README.md).
+✅ Once you’ve practiced with these components, proceed to [Module 08: Final Project](../module-08-final_project/README.md).
 
 Happy building and exploring! 🚀✨
