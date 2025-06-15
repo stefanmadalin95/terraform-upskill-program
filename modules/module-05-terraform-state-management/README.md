@@ -48,7 +48,6 @@ When you deploy infrastructure with Terraform, it keeps a **record of what it de
 ```hcl
 resource "aws_s3_bucket" "tf_state" {
   bucket = "terraform-state-yourname"
-  acl    = "private"
 }
 ```
 
@@ -74,7 +73,7 @@ terraform {
   backend "s3" {
     bucket         = "terraform-state-yourname"
     key            = "dev/terraform.tfstate"
-    region         = "us-east-1"
+    region         = "eu-central-1"
     dynamodb_table = "terraform-state-locks"
     encrypt        = true
   }

@@ -52,7 +52,7 @@ module "my_bucket" {
   source = "./modules/s3_bucket"
 
   bucket_name = "modular-bucket-001"
-  region      = "us-east-1"
+  region      = "eu-central-1"
 }
 ```
 

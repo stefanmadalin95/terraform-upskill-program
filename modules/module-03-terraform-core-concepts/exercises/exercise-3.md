@@ -13,7 +13,7 @@ Use multiple variables to make your configuration even more reusable and dynamic
 ```hcl
 variable "region" {
   description = "AWS region for deployment"
-  default     = "us-east-1"
+  default     = "eu-central-1"
 }
 
 variable "bucket_name" {
@@ -36,7 +36,6 @@ provider "aws" {
 
 resource "aws_s3_bucket" "data_bucket" {
   bucket = var.bucket_name
-  acl    = "private"
 }
 
 resource "aws_iam_role" "data_role" {

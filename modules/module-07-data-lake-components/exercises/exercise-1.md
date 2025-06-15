@@ -2,7 +2,7 @@
 
 ## 🎯 Objective
 
-Create an S3 bucket with folder-like prefixes for the **raw**, **curated**, and **processed** layers of the data lake. These will be the foundation of your architecture in the next module.
+Create an S3 bucket with folder-like prefixes for the **raw** and **processed** layers of the data lake. These will be the foundation of your architecture in the next module.
 
 ---
 
@@ -11,7 +11,7 @@ Create an S3 bucket with folder-like prefixes for the **raw**, **curated**, and 
 You’ll provision:
 
 - One S3 bucket to represent the data lake
-- Three prefixes (`raw/`, `curated/`, `processed/`)
+- Three prefixes (`raw/`, `processed/`)
 - Optional object markers (to simulate folder structure visually)
 - Versioning and server-side encryption
 - Tagging for environment and ownership
@@ -105,7 +105,7 @@ terraform apply
 ```
 
 ## 🧠 Reflection
-- Why are we using prefixes like raw/ and curated/ instead of separate buckets?
+- Why are we using prefixes like raw/ and /processed instead of separate buckets?
 - How does Terraform help ensure that these conventions stay consistent across environments?
 - What other lifecycle policies or configurations might you want to apply to these buckets in a real data lake?
 

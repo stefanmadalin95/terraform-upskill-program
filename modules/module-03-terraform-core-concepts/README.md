@@ -51,7 +51,6 @@ Resources are the actual infrastructure components you create (like S3 buckets, 
 ```hcl
 resource "aws_s3_bucket" "example_bucket" {
   bucket = "my-terraform-bucket"
-  acl    = "private"
 }
 ```
 
@@ -123,7 +122,6 @@ variable "region" {
 
 resource "aws_s3_bucket" "data_bucket" {
   bucket = "my-data-lake-bucket"
-  acl    = "private"
 }
 
 output "bucket_name" {
