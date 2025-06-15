@@ -21,7 +21,7 @@ An end-to-end data lake architecture that includes:
 
 ## 🔗 References
 
-Explore deeper all resources needed to implement this project in [references file](references.md).
+Explore deeper all resources needed to implement this project in [references](references.md).
 
 ---
 

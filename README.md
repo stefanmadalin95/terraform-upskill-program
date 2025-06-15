@@ -24,7 +24,7 @@ This course blends the essential **Terraform skills** with **AWS Data Lake conce
 | 02 | [Terraform Setup](modules/module-02-terraform-setup/README.md) | Installing Terraform and preparing your environment. |
 | 03 | [Terraform Core Concepts](modules/module-03-terraform-core-concepts/README.md) | Dive deep into providers, resources, variables, outputs, and state. |
 | 04 | [Terraform Workflow and Commands](modules/module-04-terraform-workflow-and-commands/README.md) | Explore essential commands and workflows for deployment. |
-| 05 | [Terraform Configuration Best Practices](modules/module-05-terraform-configuration-best-practices/README.md) | Learn how to manage state, backends, and locking mechanisms. |
+| 05 | [Terraform State Management](modules/module-05-terraform-state-management/README.md) | Learn how to manage state, backends, and locking mechanisms. |
 | 06 | [Terraform Modules](modules/module-06-terraform-modules/README.md) | Build reusable modules to simplify and scale your Terraform code. |
 | 07 | [Intro to Data Lake Components](modules/module-07-data_lake_components/README.md) | Understand the AWS data lake building blocks: S3, Glue, IAM, Athena. |
 | 08 | [Final Project](modules/module-08-final_project/README.md) | Combine Terraform and AWS services to build an end-to-end data lake! |

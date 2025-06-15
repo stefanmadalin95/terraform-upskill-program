@@ -65,6 +65,7 @@ Each exercise includes a short task and reflection questions—**no coding yet, 
 ## 🔗 References
 
 Check out additional resources for deeper understanding in [references](references.md).
+
 ---
 
 ## 🎉 Ready for the Next Step?

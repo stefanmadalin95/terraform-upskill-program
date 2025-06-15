@@ -154,7 +154,7 @@ Let’s put these concepts to practice:
 ✅ [Exercise 6: Understand Terraform State](exercises/exercise-6.md)  
 
 ## 🔗 References
-Check out additional resources for deeper understanding in [references.md](references.md).
+Check out additional resources for deeper understanding in [references](references.md).
 
 ## 🎉 Ready for the Next Step?
 ✅ Once you’re set up, proceed to [Module 04: Terraform Workflow and Commands](../module-04-terraform-workflow-and-commands/README.md).

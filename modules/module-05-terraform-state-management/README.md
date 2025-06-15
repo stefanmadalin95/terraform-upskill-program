@@ -99,7 +99,7 @@ Let’s structure this like a real project:
 ✅[Exercise 4: Simulate a Mini Project Setup](exercises/exercise-4.md)  
 
 ## 🔗 References
-Explore deeper best practices and examples in [references.md](references.md).
+Explore deeper best practices and examples in [references](references.md).
 
 ## 🎉 Ready for the Next Step?
 ✅ Once you’re set up, proceed to [Module 06: Terraform Workflow and Commands](../module-06-terraform-modules/README.md).
