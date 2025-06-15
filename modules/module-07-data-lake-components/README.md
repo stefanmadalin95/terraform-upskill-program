@@ -44,8 +44,6 @@ It typically includes:
 
 ## 🧪 Hands-on Exercises
 
-👉 See the [exercises folder](./exercises)
-
 ✅ [Exercise 1: Create Unique S3 Bucket and Directory](exercises/exercise-1.md)  
 ✅ [Exercise 2: Create Glue Catalog Database and Table](exercises/exercise-2.md)  
 ✅ [Exercise 3: Connect Athena to Glue Catalog](exercises/exercise-3.md)  

@@ -131,9 +131,9 @@ Terraform Workflow:
 - Preview changes (terraform plan).
 - Apply changes (terraform apply).
 
-Clean-Up:
+### ✅ Clean-Up:
 - After testing has been performed, destroy all resources using terraform destroy to avoid additional costs.
 
 ---
 
-🎓 Congratulations! This project validates your ability to apply infrastructure-as-code and data lake principles in a practical and modular way.
+#### 🎓 Congratulations! This project validates your ability to apply infrastructure-as-code and data lake principles in a practical and modular way.
