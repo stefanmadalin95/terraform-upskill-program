@@ -26,7 +26,7 @@ This course blends the essential **Terraform skills** with **AWS Data Lake conce
 | 04 | [Terraform Workflow and Commands](modules/module-04-terraform-workflow-and-commands/README.md) | Explore essential commands and workflows for deployment. |
 | 05 | [Terraform Configuration Best Practices](modules/module-05-terraform-configuration-best-practices/README.md) | Learn how to manage state, backends, and locking mechanisms. |
 | 06 | [Terraform Modules](modules/module-06-terraform-modules/README.md) | Build reusable modules to simplify and scale your Terraform code. |
-| 07 | [AWS Data Lake Architecture and Components](modules/module-07-aws-data-lake-architecture-and-components/README.md) | Understand the AWS data lake building blocks: S3, Glue, IAM, Athena. |
+| 07 | [Intro to Data Lake Components](modules/module-07-data_lake_components/README.md) | Understand the AWS data lake building blocks: S3, Glue, IAM, Athena. |
 | 08 | [Final Project](modules/module-08-final_project/README.md) | Combine Terraform and AWS services to build an end-to-end data lake! |
 
 ---
@@ -35,14 +35,14 @@ This course blends the essential **Terraform skills** with **AWS Data Lake conce
 
 1️⃣ Start with **Module 01** and move forward in order.  
 2️⃣ Each module has a **README.md** for theory, **exercises** for hands-on practice, and **references** for further learning.  
-3️⃣ Check **shared-resources/** for reusable code samples.  
+3️⃣ The course concludes with a final project where you'll apply everything you've learned to build a fully functional data lake using Terraform and AWS.  
 4️⃣ Work together—this is a team learning journey! 🚀
 
 ---
 
 ## ⚙️ Prerequisites
 
-- Basic AWS knowledge (IAM, S3, networking).  
+- Basic AWS knowledge (IAM, S3, Athena, Glue).  
 - An AWS account with appropriate permissions (Contact TBD).
 - Visual Studio Code installed on your local machine.
 - Local setup with Terraform installed (covered in Module 02).  

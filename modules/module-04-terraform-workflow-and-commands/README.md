@@ -72,6 +72,6 @@ Explore deeper best practices and examples in [references](references.md).
 
 ## 🧭 Ready to Learn State?
 
-Once you're comfortable with the command line flow, continue to [Module 05: State Management](../module-05-terraform-state-management/README.md) to understand how Terraform tracks everything you've built.
+Once you're comfortable with the command line flow, continue to [Module 05: Terraform State Management](../module-05-terraform-state-management/README.md) to understand how Terraform tracks everything you've built.
 
 Let’s keep building momentum! 💥

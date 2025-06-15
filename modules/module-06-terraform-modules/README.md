@@ -86,4 +86,4 @@ In this module, you'll:
 Explore deeper best practices and examples in [references](references.md).
 
 ## 🎉 Ready for the Next Step?
-✅ Once you’re set up, proceed to [Module 07: Terraform Workflow and Commands](../module-07-aws-data-lake-architecture-and-components/README.md).
+✅ Once you’re set up, proceed to [Module 07: Intro to Data Lake Components](../module-07-data-lake-components/README.md).
