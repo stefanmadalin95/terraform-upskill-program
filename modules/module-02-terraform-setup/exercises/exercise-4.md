@@ -1,5 +1,5 @@
 
-# 🧪 Exercise 5: Install and Use Git
+# 🧪 Exercise 4: Install and Use Git
 
 ## 🎯 Objective
 
