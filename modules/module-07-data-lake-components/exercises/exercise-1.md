@@ -109,3 +109,6 @@ terraform apply
 - How does Terraform help ensure that these conventions stay consistent across environments?
 - What other lifecycle policies or configurations might you want to apply to these buckets in a real data lake?
 
+---
+
+➡️ **Next Exercise:** [🧪 Exercise 2: Create Glue Catalog Database and Table](./exercise-2.md)

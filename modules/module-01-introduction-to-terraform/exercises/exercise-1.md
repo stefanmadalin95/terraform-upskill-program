@@ -37,3 +37,8 @@ Instead of setting up buckets, roles, and tables manually, they use Terraform to
 
 - What’s the one task you’re most excited to automate with Terraform?  
 - Share your thoughts here or discuss with a colleague!
+
+---
+
+➡️ **Next Exercise:** [🧪 Exercise 2: Real-World Reflections](./exercise-2.md)
+

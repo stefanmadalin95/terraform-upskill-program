@@ -38,3 +38,7 @@ terraform init
 ## Reflection
 - Why does Terraform need a provider block?
 - How would you change this for another cloud (like Azure)?
+
+---
+
+➡️ **Next Exercise:** [🧪 Exercise 2: Create Multiple Resources](./exercise-2.md)

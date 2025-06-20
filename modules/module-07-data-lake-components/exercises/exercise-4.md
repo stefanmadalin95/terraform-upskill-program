@@ -131,3 +131,7 @@ terraform apply
 - Why is it important to scope S3 permissions tightly in IAM policies?
 - What could go wrong if this role were assumed by other AWS services?
 - How would you update this policy to include other buckets or actions?
+
+---
+
+➡️ **Next Exercise:** [🧪 Exercise 5: Create Glue Job to Query Catalog Data](./exercise-5.md)

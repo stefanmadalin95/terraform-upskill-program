@@ -117,3 +117,7 @@ terraform apply
 - What kind of schema do you typically define in Glue tables?
 - Why is separating raw and curated metadata into different databases or tables beneficial?
 - How could you adjust this table to support other formats like Parquet or JSON?
+
+---
+
+➡️ **Next Exercise:** [🧪 Exercise 3: Connect Athena to Glue Catalog](./exercise-3.md)

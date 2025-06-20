@@ -42,3 +42,7 @@ terraform apply
 ## Reflection
 - How do you think these data sources could help in your real-world data engineering projects?
 - Can you think of other AWS data you’d want to query with Terraform?
+
+---
+
+➡️ **Next Exercise:** [🧪 Exercise 5: Show Outputs](./exercise-5.md)

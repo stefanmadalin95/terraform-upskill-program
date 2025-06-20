@@ -63,3 +63,7 @@ terraform apply
 ## Reflection
 - How does using more variables make your code easier to reuse and share?
 - What other variables might you want to add for future flexibility?
+
+---
+
+➡️ **Next Exercise:** [🧪 Exercise 4: Use Data Sources](./exercise-4.md)

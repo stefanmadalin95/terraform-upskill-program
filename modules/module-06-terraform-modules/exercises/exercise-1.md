@@ -31,3 +31,7 @@ terraform apply
 
 ## Reflection
 - How does using this module simplify reuse across environments?
+
+---
+
+➡️ **Next Exercise:** [🧪 Exercise 2: Create a Reusable IAM Role Module](./exercise-2.md)

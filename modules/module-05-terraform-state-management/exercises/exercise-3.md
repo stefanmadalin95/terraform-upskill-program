@@ -27,3 +27,7 @@ terraform init
 ## Reflection
 - Why is locking important in a CI/CD pipeline?
 - Have you ever seen inconsistent environments due to parallel changes?
+
+---
+
+➡️ **Next Exercise:** [🧪 Exercise 4: Simulate a Mini Project Setup](./exercise-4.md)

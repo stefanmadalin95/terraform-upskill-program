@@ -1,6 +1,6 @@
 # ⚙️ Module 02: Terraform Setup
 
-Welcome to **Module 02**! Here, you’ll learn **why** setting up Terraform, the AWS CLI, and environment variables is crucial for working with infrastructure as code in real-world data projects.
+Welcome to **Module 02**! Here, you’ll learn **why** setting up Git, Terraform, the AWS CLI, and environment variables is crucial for working with infrastructure as code in real-world data projects.
 
 ---
 
@@ -33,6 +33,21 @@ Environment variables let you:
 
 ---
 
+### 🟡 Why Install and Use Git?
+
+Git is the **version control backbone** of this course and modern DevOps.
+
+✅ It tracks changes to your infrastructure code (just like versioning for datasets!)  
+✅ It enables **collaboration**—you and your teammates can work on the same repo without conflicts  
+✅ It helps you **review, test, and roll back** changes safely  
+✅ It integrates directly with platforms like GitHub for pull requests, reviews, and CI/CD
+
+In a Terraform-based project like this, Git ensures your infrastructure is reproducible, testable, and auditable.
+
+You’ll use Git in nearly every exercise—from committing Terraform modules to contributing to the final data lake solution.
+
+---
+
 ### 🟡 Putting It All Together
 
 By the end of this module, you’ll have:
@@ -50,7 +65,8 @@ By the end of this module, you’ll have:
 - [Exercise 1: Install Terraform](exercises/exercise-1.md)  
 - [Exercise 2: Install the AWS CLI](exercises/exercise-2.md)  
 - [Exercise 3: Configure AWS CLI and Credentials](exercises/exercise-3.md)  
-- [Exercise 4: Final Verification](exercises/exercise-4.md)
+- [Exercise 4: Install and Use Git](exercises/exercise-4.md)  
+- [Exercise 5: Final Verification](exercises/exercise-5.md)
 
 ---
 

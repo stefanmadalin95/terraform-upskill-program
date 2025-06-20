@@ -53,3 +53,7 @@ terraform apply
 ## Reflection
 - How does Terraform handle creating multiple resources together?
 - How would you describe the advantage of defining these resources in code rather than clicking in the console?
+
+---
+
+➡️ **Next Exercise:** [🧪 Exercise 3: Add Variables for Flexibility](./exercise-3.md)

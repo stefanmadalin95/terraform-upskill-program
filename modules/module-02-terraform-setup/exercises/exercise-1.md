@@ -18,3 +18,7 @@ terraform --version
 ```
 
 ✅ Take a screenshot or note of the version output.
+
+---
+
+➡️ **Next Exercise:** [🧪 Exercise 2: Install the AWS CLI](./exercise-2.md)

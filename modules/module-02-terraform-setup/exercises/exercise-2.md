@@ -33,3 +33,7 @@ sudo ./aws/install
 ```bash
 aws --version
 ```
+
+---
+
+➡️ **Next Exercise:** [🧪 Exercise 3: Configure AWS CLI and Credentials](./exercise-3.md)

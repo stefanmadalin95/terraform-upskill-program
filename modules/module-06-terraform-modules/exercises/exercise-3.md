@@ -21,3 +21,7 @@ terraform apply
 
 ## Reflection
 - Why is separating logic into modules useful when scaling infrastructure?
+
+---
+
+➡️ **Next Exercise:** [🧪 Exercise 4: Use Module Outputs](./exercise-4.md)

@@ -27,3 +27,7 @@ module "data_role" {
 
 ## Reflection
 - How does this module help you enforce standards across teams?
+
+---
+
+➡️ **Next Exercise:** [🧪 Exercise 3: Compose Modules in a Root Project](./exercise-3.md)

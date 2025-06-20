@@ -27,3 +27,6 @@ terraform apply
 ## Reflection
 - Why is it useful to have outputs after deployment?
 
+---
+
+➡️ **Next Exercise:** [🧪 Exercise 6: Understand Terraform State](./exercise-6.md)

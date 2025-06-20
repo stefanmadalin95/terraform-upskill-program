@@ -142,3 +142,7 @@ Then open the AWS Glue Console to manually start the job and monitor the output.
 - How would you expand this script to write to the curated layer?
 - What validations could you build on top of this (e.g., schema checks)?
 - What’s the advantage of keeping job scripts outside the Terraform repo?
+
+---
+
+➡️ **Back to Module:** [🧪 Module 07: Intro to Data Lake Components (Terraform + AWS)](../README.md)

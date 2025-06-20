@@ -33,3 +33,6 @@ terraform init
 - What are the advantages of using S3 for state?
 -How would this support a team working together?
 
+---
+
+➡️ **Next Exercise:** [🧪 Exercise 3: Add DynamoDB Locking (Optional)](./exercise-3.md)

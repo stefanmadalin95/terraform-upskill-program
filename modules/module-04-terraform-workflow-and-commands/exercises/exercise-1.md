@@ -20,3 +20,7 @@ terraform init
 ## Reflection
 - What does init actually do behind the scenes?
 - What files/folders were created after running it?
+
+---
+
+➡️ **Next Exercise:** [🧪 Exercise 2: Validate and Format Code](./exercise-2.md)

@@ -26,3 +26,7 @@ terraform output
 
 ## Reflection
 - How could this help you pass info between modules or external systems?
+
+---
+
+➡️ **Next Exercise:** [🧪 Exercise 5: Reflect on Modular Infrastructure](./exercise-5.md)

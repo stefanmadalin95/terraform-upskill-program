@@ -28,3 +28,7 @@ terraform apply
 ## Reflection
 - How does this structure prepare you for the upcoming Data Lake module?
 - What challenges did you encounter while splitting files?
+
+---
+
+➡️ **Back to Module:** [🧪 Module 05: Terraform State Management](../README.md)

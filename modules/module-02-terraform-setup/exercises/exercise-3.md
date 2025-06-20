@@ -50,3 +50,7 @@ aws sts get-caller-identity
 ```
 
 ✅ If it shows your AWS account details, you’re all set!
+
+---
+
+➡️ **Next Exercise:** [🧪 Exercise 4: Install and Use Git](./exercise-4.md)

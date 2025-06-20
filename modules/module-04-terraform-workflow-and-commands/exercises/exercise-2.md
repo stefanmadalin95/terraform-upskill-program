@@ -25,3 +25,8 @@ terraform validate
 ## Reflection
 - How does formatting help in team collaboration?
 - Why is it useful to run validate before plan?
+
+---
+
+➡️ **Next Exercise:** [🧪 Exercise 3: Plan Infrastructure Changes](./exercise-3.md)
+

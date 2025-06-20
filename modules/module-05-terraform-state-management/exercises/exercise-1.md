@@ -22,3 +22,7 @@ terraform state show aws_s3_bucket.data_bucket
 ## Reflection
 - What surprised you about what Terraform stores in the state?
 - Why should this file be treated like sensitive configuration?
+
+---
+
+➡️ **Next Exercise:** [🧪 Exercise 2: Set Up Remote Backend in S3](./exercise-2.md)

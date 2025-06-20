@@ -31,3 +31,7 @@ terraform output
 
 ## Reflection
 - How would this output help your teammates or downstream apps?
+
+---
+
+➡️ **Next Exercise:** [🧪 Exercise 5: Tear Down With Destroy](./exercise-5.md)

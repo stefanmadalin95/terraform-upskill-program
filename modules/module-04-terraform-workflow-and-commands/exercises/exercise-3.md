@@ -20,3 +20,7 @@ terraform plan
 ## Reflection
 - What surprised you about the plan output?
 - Why is this command useful in CI/CD pipelines?
+
+---
+
+➡️ **Next Exercise:** [🧪 Exercise 4: Apply and Output](./exercise-4.md)

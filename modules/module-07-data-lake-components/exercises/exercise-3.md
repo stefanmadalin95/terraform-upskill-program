@@ -91,3 +91,6 @@ SELECT * FROM raw_layer LIMIT 10;
 - Why is a result location needed for queries?
 - How could you automate table discovery or crawling in future?
 
+---
+
+➡️ **Next Exercise:** [🧪 Exercise 4: Create IAM Role for Catalog Access](./exercise-4.md)
