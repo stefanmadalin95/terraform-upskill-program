@@ -15,6 +15,7 @@ Use `terraform init` to prepare your project for deployment.
 ```bash
 terraform init
 ```
+
 ✅ Confirm that Terraform initialized successfully
 
 ## Reflection

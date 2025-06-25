@@ -1,8 +1,9 @@
-# 📝 Exercise 3: Add Variables for Flexibility
+# 📝 Exercise 3: Add Variables and Locals for Flexibility
 
 ## Objective
 
-Use multiple variables to make your configuration even more reusable and dynamic.
+Use multiple variables and locals to make your configuration more reusable, readable, and maintainable.
+
 
 ---
 
@@ -13,17 +14,30 @@ Use multiple variables to make your configuration even more reusable and dynamic
 ```hcl
 variable "region" {
   description = "AWS region for deployment"
-  default     = "eu-central-1"
+  default     = "eu-west-1"
 }
 
-variable "bucket_name" {
+variable "bucket_prefix" {
   description = "Name of the S3 bucket"
-  default     = "my-first-data-lake-bucket"
+  default     = "my-first"
+}
+
+variable "environment" {
+  description = "Deployment environment (e.g. dev, staging, prod)"
+  default     = "dev"
 }
 
 variable "role_name" {
   description = "Name of the IAM role"
   default     = "data-processing-role"
+}
+```
+
+✅ Create a new file called locals.tf and define your locals:
+
+```hcl
+locals {
+  bucket_name = "${var.bucket_prefix}-data-lake-${var.environment}"
 }
 ```
 
@@ -35,18 +49,19 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "data_bucket" {
-  bucket = var.bucket_name
+  bucket = local.bucket_name
 }
 
 resource "aws_iam_role" "data_role" {
   name = var.role_name
+
   assume_role_policy = jsonencode({
     Version = "2012-10-17",
     Statement = [{
       Action = "sts:AssumeRole",
       Effect = "Allow",
       Principal = {
-        Service = "ec2.amazonaws.com"
+        Service = "glue.amazonaws.com"
       }
     }]
   })

@@ -2,20 +2,27 @@
 
 ## Objective
 
-Move your Terraform state to an S3 bucket.
+Configure your Terraform project to use a remote S3 backend for storing state. This setup is designed to support team collaboration, using folders for each data engineer and a shared bucket created by the course owner.
 
 ---
 
+## Prerequisites
+
+The S3 bucket has already been created by the course owner.
+Name format: terraform-state-files-<AWS_ACCOUNT_ID>  
+✅ Example: terraform-state-files-759505726502
+
+Each engineer will store their state in a personal folder inside this bucket.
+
 ## Steps
 
-✅ Create an S3 bucket (manually or with Terraform)  
 ✅ Create a new file `backend.tf` with this content:
 
 ```hcl
 terraform {
   backend "s3" {
-    bucket = "terraform-state-yourname"
-    key    = "terraform.tfstate"
+    bucket = "terraform-state-files-759505726502"
+    key    = "stefan/terraform.tfstate"           # Replace 'stefan' with your folder
     region = "eu-west-1"
   }
 }
@@ -25,6 +32,8 @@ terraform {
 
 ```bash
 terraform init
+terraform plan
+terraform apply
 ```
 
 ✅ Verify the message that state is being moved

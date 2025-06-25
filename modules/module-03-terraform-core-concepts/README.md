@@ -100,6 +100,29 @@ output "bucket_name" {
 }
 ```
 
+7️⃣ Locals
+Locals let you define reusable values inside your configuration. They help you avoid repeating the same logic or value multiple times, making your code easier to maintain.
+
+**Analogy:**  
+Think of locals as nicknames for longer values or calculated fields. They don’t get passed in like variables; instead, they live inside your config and are often used for cleaner logic.
+
+**Example:**
+
+```hcl
+locals {
+  bucket_prefix = "your_name"
+  bucket_name   = "${local.bucket_prefix}-data-lake"
+}
+```
+
+Use it in a resource:
+
+```hcl
+resource "aws_s3_bucket" "data_lake" {
+  bucket = local.bucket_name
+}
+```
+
 ### 6️⃣ State
 
 Terraform keeps track of everything it creates in a state file (```terraform.tfstate```).
