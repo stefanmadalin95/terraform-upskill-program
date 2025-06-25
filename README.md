@@ -43,7 +43,7 @@ This course blends the essential **Terraform skills** with **AWS Data Lake conce
 ## ⚙️ Prerequisites
 
 - Basic AWS knowledge (IAM, S3, Athena, Glue).  
-- An AWS account with appropriate permissions (Contact TBD).
+- An AWS account with appropriate permissions - Contact Sebastian Leonte and ask for an AWS User.
 - Visual Studio Code installed on your local machine.
 - Local setup with Terraform installed (covered in Module 02).  
 - A curious mindset and excitement to learn!

@@ -22,14 +22,15 @@ resource "aws_s3_bucket" "data_bucket" {
 
 ```hcl
 resource "aws_iam_role" "data_role" {
-  name = "data-processing-role"
+  name = var.role_name
+
   assume_role_policy = jsonencode({
     Version = "2012-10-17",
     Statement = [{
       Action = "sts:AssumeRole",
       Effect = "Allow",
       Principal = {
-        Service = "ec2.amazonaws.com"
+        Service = "glue.amazonaws.com"
       }
     }]
   })

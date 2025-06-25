@@ -100,7 +100,7 @@ output "bucket_name" {
 }
 ```
 
-7️⃣ Locals
+7️⃣ Locals  
 Locals let you define reusable values inside your configuration. They help you avoid repeating the same logic or value multiple times, making your code easier to maintain.
 
 **Analogy:**  
@@ -169,7 +169,7 @@ Let’s put these concepts to practice:
 
 ✅ [Exercise 1: Configure the AWS Provider](exercises/exercise-1.md)  
 ✅ [Exercise 2: Create Multiple Resources](exercises/exercise-2.md)  
-✅ [Exercise 3: Add Variables for Flexibility](exercises/exercise-3.md)  
+✅ [Exercise 3: Add Variables and Locals for Flexibility](exercises/exercise-3.md)  
 ✅ [Exercise 4: Use Data Sources](exercises/exercise-4.md)  
 ✅ [Exercise 5: Show Outputs](exercises/exercise-5.md)  
 ✅ [Exercise 6: Understand Terraform State](exercises/exercise-6.md)  

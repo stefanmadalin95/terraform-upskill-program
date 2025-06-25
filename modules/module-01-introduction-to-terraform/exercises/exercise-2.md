@@ -30,3 +30,5 @@ Imagine you need to:
 - How would you explain this to a new teammate?
 
 Capture your thoughts here or share them with your team!
+
+➡️ **Back to Module:** [🧪 Module 01: Introduction to Terraform](../README.md)

@@ -50,7 +50,7 @@ Think of it as your **developer loop** when managing infrastructure.
 
 👉 Head over to the [exercises folder](./exercises) to try each command in action.
 
-✅ [Exercise 1: Initialize Your Project (`terraform init`)](exercises/exercise-1.md)  
+✅ [Exercise 1: Initialize a Terraform Project](exercises/exercise-1.md)  
 ✅ [Exercise 2: Validate and Format Code](exercises/exercise-2.md)  
 ✅ [Exercise 3: Plan Infrastructure Changes](exercises/exercise-3.md)  
 ✅ [Exercise 4: Apply and Output](exercises/exercise-4.md)  
