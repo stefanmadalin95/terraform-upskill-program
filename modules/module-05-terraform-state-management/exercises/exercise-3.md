@@ -1,4 +1,4 @@
-# 📝 Exercise 3: Add DynamoDB Locking (Optional)
+# 📝 Exercise 3: Add DynamoDB Locking
 
 ## Objective
 
@@ -11,7 +11,7 @@ Prevent team members from applying changes to the same state file at the same ti
 ✅ Use the existing DynamoDB table
 
 The locking table has already been created by the course owner.  
-Name: terraform-state-locks  
+Name: `terraform-state-locks` 
 📌 This table uses the LockID as the primary key and is shared by all engineers.  
 
 ✅ Update your `backend.tf` to enable locking:

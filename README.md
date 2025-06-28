@@ -10,7 +10,7 @@ This course blends the essential **Terraform skills** with **AWS Data Lake conce
 
 ✅ Foundations of Infrastructure as Code (IaC) and Terraform  
 ✅ How to write, structure, and manage Terraform code  
-✅ Key AWS services for data lakes (S3, Glue, VPC, IAM, Athena)  
+✅ Key AWS services for data lakes (S3, Glue, IAM, Athena)  
 ✅ Building secure, scalable data infrastructure in the cloud  
 ✅ Real-world exercises and examples to reinforce your learning
 
@@ -54,10 +54,10 @@ Each module is designed to take 1–2 hours, depending on your experience level 
 ## ⚙️ Prerequisites
 
 - Basic AWS knowledge (IAM, S3, Athena, Glue).  
-- An AWS account with appropriate permissions - Contact Sebastian Leonte and ask for an AWS User.
+- An AWS account with appropriate permissions - Contact Sebastian Leonte and ask for an IBM Managed AWS Account.
 - Visual Studio Code installed on your local machine.
 - Local setup with Terraform installed (covered in Module 02).  
-- A curious mindset and excitement to learn!
+- A curious mindset and excitement to learn!s
 
 ---
 

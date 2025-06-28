@@ -38,21 +38,21 @@ You design it once, and then use it over and over again in different builds.
 
 ## 🧩 Module Structure
 
-Every module can contain:
+Every module can contain:  
 📁 /my-module/  
-├── main.tf # resource definitions  
-├── variables.tf # input parameters  
-├── outputs.tf # what the module returns  
+  ├── main.tf # resource definitions  
+  ├── variables.tf # input parameters  
+  ├── outputs.tf # what the module returns  
 
 
 And you call it like this:
 
 ```hcl
 module "my_bucket" {
-  source = "./modules/s3_bucket"
+  source = "./modules/my-module"
 
   bucket_name = "modular-bucket-001"
-  region      = "eu-central-1"
+  region      = "eu-west-1"
 }
 ```
 

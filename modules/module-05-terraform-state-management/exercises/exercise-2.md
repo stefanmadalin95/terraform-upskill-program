@@ -8,9 +8,9 @@ Configure your Terraform project to use a remote S3 backend for storing state. T
 
 ## Prerequisites
 
-The S3 bucket has already been created by the course owner.
+The S3 bucket has already been created by the course owner.  
 Name format: terraform-state-files-<AWS_ACCOUNT_ID>  
-✅ Example: terraform-state-files-759505726502
+✅ Example: terraform-state-files-759505726502  
 
 Each engineer will store their state in a personal folder inside this bucket.
 
@@ -39,8 +39,8 @@ terraform apply
 ✅ Verify the message that state is being moved
 
 ## Reflection
-- What are the advantages of using S3 for state?
--How would this support a team working together?
+- What are the advantages of using S3 for state?  
+- How would this support a team working together?  
 
 ---
 

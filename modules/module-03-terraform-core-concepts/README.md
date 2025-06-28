@@ -100,7 +100,7 @@ output "bucket_name" {
 }
 ```
 
-7️⃣ Locals  
+## 6️⃣ Locals  
 Locals let you define reusable values inside your configuration. They help you avoid repeating the same logic or value multiple times, making your code easier to maintain.
 
 **Analogy:**  
@@ -123,7 +123,7 @@ resource "aws_s3_bucket" "data_lake" {
 }
 ```
 
-### 6️⃣ State
+### 7️⃣ State
 
 Terraform keeps track of everything it creates in a state file (```terraform.tfstate```).
 

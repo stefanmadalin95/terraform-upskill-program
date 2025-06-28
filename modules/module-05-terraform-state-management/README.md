@@ -31,7 +31,7 @@ Terraform's **state file** (`terraform.tfstate`) is a snapshot of your infrastru
 
 ## 🚨 Why Managing State Matters
 
-✅ Fine for solo projects
+✅ Fine for solo projects  
 If you’re building alone on your laptop, storing `terraform.tfstate` locally might seem good enough.
 
 🔥 Problematic for teams

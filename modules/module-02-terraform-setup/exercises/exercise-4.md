@@ -84,11 +84,9 @@ git push -u origin main
 ### ✅ Step 5: Create a Branch and Commit
 
 ```bash
-git checkout -b feature/setup-script
-touch hello.txt
-echo "hello from terraform learners!" > hello.txt
-git add hello.txt
-git commit -m "Add hello.txt as a test file"
+git checkout -b feature/new_feature
+git add *
+git commit -m "Add new feature"
 ```
 
 ---
@@ -96,7 +94,7 @@ git commit -m "Add hello.txt as a test file"
 ### ✅ Step 6: Push Your Branch
 
 ```bash
-git push origin feature/setup-script
+git push origin feature/new_feature
 ```
 
 Then go to GitHub and open a **pull request** (PR) 🎉

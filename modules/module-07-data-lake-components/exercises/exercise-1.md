@@ -11,8 +11,7 @@ Create an S3 bucket with folder-like prefixes for the **raw** and **processed** 
 You’ll provision:
 
 - One S3 bucket to represent the data lake
-- Three prefixes (`raw/`, `processed/`)
-- Optional object markers (to simulate folder structure visually)
+- Two directories (`raw/`, `processed/`)
 - Versioning and server-side encryption
 - Tagging for environment and ownership
 
@@ -52,7 +51,6 @@ resource "aws_s3_bucket" "data_lake" {
 resource "aws_s3_object" "raw_folder" {
   bucket = aws_s3_bucket.data_lake.id
   key    = "raw_data/"
-  content = ""
 }
 ```
 
