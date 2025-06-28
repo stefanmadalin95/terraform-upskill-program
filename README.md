@@ -16,6 +16,17 @@ This course blends the essential **Terraform skills** with **AWS Data Lake conce
 
 ---
 
+## ⏱️ Estimated Time Commitment
+
+This upskill program is designed to be flexible yet focused.  
+🕒 **Estimated total time**: 10–15 hours  
+📦 Spread across 8 hands-on modules  
+🔁 **Self-paced**: Move through at your own rhythm—or team up and learn together!  
+
+Each module is designed to take 1–2 hours, depending on your experience level and whether you're completing the exercises individually or in a group.
+
+---
+
 ## 📚 Course Modules
 
 | Module | Title | Summary |
