@@ -76,7 +76,11 @@ This program is dynamic and continuously improving!
 
 Let’s build this together as a community of learners 🚀
 
+---
 
+
+## 🎓 Interested in Certification?
+If this course sparked your interest in mastering Terraform further, a great next step is to pursue the [HashiCorp Certified: Terraform Associate certification](https://developer.hashicorp.com/certifications/infrastructure-automation).
 
 ---
 
